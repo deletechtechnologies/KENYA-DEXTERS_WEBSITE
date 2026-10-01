@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find the right healthcare and homecare support for your loved one with Kenya Dexters Nursing Agency.">
+  <title>For Families | Kenya Dexters Nursing Agency</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="KENYA DEXTERS NURSING AGENCY.png">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Page-specific styles -->
+  <style>
+    .family-hero-img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .care-options-card {
+      border-top: 4px solid var(--primary-pink, #e91e63);
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    .care-options-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .care-options-content {
+      padding: 1.5rem;
+    }
+
+    .form-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .form-disclaimer {
+      font-size: 0.875rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="KENYA DEXTERS NURSING AGENCY.png" alt="Kenya Dexters Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="brand-name">Kenya Dexters</span>
+          <span class="brand-sub">Nursing Agency</span>
+        </div>
+      </a>
+      
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="families.html" class="active" aria-current="page">For Families</a>
+        <a href="institutions.html">For Institutions</a>
+        <a href="professionals.html">Our Professionals</a>
+        <a href="guide.html">Healthcare Guide</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="families.html" class="btn btn-primary">Request Care</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container section">
+    <h1 class="section-title">Find the Right Care for Your Loved One</h1>
+    
+    <div class="content-block text-center" style="max-width: 800px; margin: 0 auto 2.5rem auto;">
+      <!-- Hero Banner -->
+      <img src=images/family.jpg
+           alt="African healthcare caregiver interacting warmly with an elder at home" 
+           class="family-hero-img">
+
+      <p style="font-size: 1.1rem; line-height: 1.6;">When someone you love needs care, knowing where to start can be difficult.</p>
+      <p class="mt-2">You may know that your parent, child, spouse, or relative needs support—but you may not know whether you need a nurse, caregiver, physiotherapist, occupational therapist, or another professional.</p>
+      <p class="mt-2" style="font-size: 1.15rem; color: var(--secondary-green); font-weight: 600;">You don't have to figure it out alone.</p>
+      <p class="mt-2">Tell us what is happening, where you are located, and what kind of support you believe is needed. We will review your request and guide you towards an appropriate service or professional.</p>
+    </div>
+
+    <!-- Grid Layout for Services & Form -->
+    <div class="grid-2-col my-4">
+      
+      <!-- Care Options Section -->
+      <div class="card care-options-card">
+        <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" 
+             alt="African caregiver supporting a family member in need of homecare" 
+             class="care-options-img">
+        <div class="care-options-content">
+          <h2 style="color: var(--primary-pink); margin-bottom: 1rem;">Care We Can Help You Explore</h2>
+          <ul class="values-list" style="margin-top: 0;">
+            <li><strong>Home Nursing</strong></li>
+            <li><strong>Elderly Care</strong></li>
+            <li><strong>Palliative Care</strong></li>
+            <li><strong>Respite Care</strong></li>
+            <li><strong>Post-Hospitalisation Care</strong></li>
+            <li><strong>Disability Support</strong></li>
+            <li><strong>Physiotherapy</strong></li>
+            <li><strong>Occupational Therapy</strong></li>
+            <li><strong>Speech Therapy</strong></li>
+            <li><strong>Caregiver &amp; Nursing Assistance</strong></li>
+            <li><strong>Medical Consultancy</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Request Care Form Wrapper -->
+      <div class="form-wrapper">
+        <form class="care-form" id="familyCareForm" action="process-care.php" method="POST">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" placeholder="e.g. Jane Sulwe" autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp *</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 0712 345 678" autocomplete="tel" inputmode="tel" required>
+          </div>
+
+          <div class="form-group">
+            <label for="location">Location *</label>
+            <input type="text" id="location" name="location" placeholder="e.g. Westlands, Nairobi" required>
+          </div>
+
+          <div class="form-group">
+            <label for="whoNeedsCare">Who Needs Care? *</label>
+            <input type="text" id="whoNeedsCare" name="whoNeedsCare" placeholder="e.g. Mother, Aged 72" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mainNeed">Main Need *</label>
+            <textarea id="mainNeed" name="mainNeed" rows="3" placeholder="Briefly describe the physical or medical condition..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="serviceRequired">Service Required</label>
+            <select id="serviceRequired" name="serviceRequired">
+              <option value="">-- Select a Service (Optional) --</option>
+              <option value="Home Nursing">Home Nursing</option>
+              <option value="Elderly Care">Elderly Care</option>
+              <option value="Palliative Care">Palliative Care</option>
+              <option value="Respite Care">Respite Care</option>
+              <option value="Post-Hospitalisation Care">Post-Hospitalisation Care</option>
+              <option value="Disability Support">Disability Support</option>
+              <option value="Physiotherapy">Physiotherapy</option>
+              <option value="Occupational Therapy">Occupational Therapy</option>
+              <option value="Speech Therapy">Speech Therapy</option>
+              <option value="Caregiver Assistance">Caregiver Assistance</option>
+              <option value="Medical Consultancy">Medical Consultancy</option>
+              <option value="Unsure / Need Advice">Unsure / Need Advice</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="startDate">Preferred Start Date</label>
+            <input type="date" id="startDate" name="startDate">
+          </div>
+
+          <div class="form-group">
+            <label for="careArrangement">Care Arrangement</label>
+            <select id="careArrangement" name="careArrangement">
+              <option value="">-- Select Arrangement --</option>
+              <option value="Full-Time (Live-in)">Full-Time (Live-in)</option>
+              <option value="Full-Time (Day Shifts)">Full-Time (Day Shifts)</option>
+              <option value="Part-Time / Visiting">Part-Time / Visiting</option>
+              <option value="Night Shifts Only">Night Shifts Only</option>
+              <option value="Emergency / Temporary">Emergency / Temporary</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="additionalInfo">Additional Information</label>
+            <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Any specific requirements or schedule preferences..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width">SUBMIT CARE REQUEST</button>
+          
+          <p class="form-disclaimer">
+            <em>We encourage families to share only information necessary for us to understand and respond to the request.</em>
+          </p>
+        </form>
+
+        <!-- Direct Contact Alternative -->
+        <div class="card text-center" style="border-top-color: var(--accent-blue, #2196f3);">
+          <h3>Need to speak to someone directly?</h3>
+          <p class="mt-2"><strong>Call or WhatsApp:</strong></p>
+          <p>
+            <a href="tel:0786242477" style="color: var(--primary-pink); font-weight: bold; text-decoration: none;">0786 242 477</a> | 
+            <a href="tel:0724235532" style="color: var(--primary-pink); font-weight: bold; text-decoration: none;">0724 235 532</a>
+          </p>
+          <div class="mt-3">
+            <a href="https://wa.me/254786242477" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">WHATSAPP US</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      
+      <!-- Column 1: Contact Details -->
+      <div class="footer-info">
+        <h3>Kenya Dexters Nursing Agency</h3>
+        <p><strong>Call / WhatsApp:</strong> 0786 242 477 | 0724 235 532</p>
+        <p><strong>Email:</strong> kenyadextershomecare@gmail.com</p>
+        <p><strong>Service Areas:</strong> Nairobi, Kiambu, Machakos, Kajiado</p>
+      </div>
+
+      <!-- Column 2: Navigation Links -->
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="families.html">For Families</a>
+          <a href="institutions.html">For Institutions</a>
+        </div>
+      </div>
+
+      <!-- Column 3: Resource Links -->
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <div class="footer-links">
+          <a href="professionals.html">Our Professionals</a>
+          <a href="guide.html">Healthcare Guide</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <p>&copy; 2026 Kenya Dexters Nursing Agency. More Than Care. It's Dignity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Contact Bar -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:0786242477" class="btn btn-secondary">Call</a>
+    <a href="https://wa.me/254786242477" class="btn btn-primary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <a href="families.html" class="btn btn-primary">Request Care</a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

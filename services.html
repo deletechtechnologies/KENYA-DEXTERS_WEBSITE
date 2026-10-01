@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore homecare, therapy, healthcare staffing, and medical consultancy services offered by Kenya Dexters Nursing Agency.">
+  <title>Our Services | Kenya Dexters Nursing Agency</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="KENYA DEXTERS NURSING AGENCY.png">
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .service-detail-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 0;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+      margin-bottom: 2.5rem;
+      border-top: 4px solid var(--primary-pink, #e91e63);
+      display: flex;
+      flex-direction: column;
+    }
+    .service-banner-img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .service-body {
+      padding: 2rem;
+    }
+    .service-body h2 {
+      color: var(--primary-pink, #e91e63);
+      margin-top: 0;
+      margin-bottom: 0.25rem;
+    }
+    .sub-heading {
+      color: var(--secondary-green, #2e7d32);
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .services-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 768px) {
+      .services-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="KENYA DEXTERS NURSING AGENCY.png" alt="Kenya Dexters Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="brand-name">Kenya Dexters</span>
+          <span class="brand-sub">Nursing Agency</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="about.html">About Us</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="families.html">For Families</a>
+        <a href="institutions.html">For Institutions</a>
+        <a href="professionals.html">Our Professionals</a>
+        <a href="guide.html">Healthcare Guide</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="families.html" class="btn btn-primary">Request Care</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container section">
+    <h1 class="section-title">Our Services</h1>
+    <p class="text-center" style="max-width: 800px; margin: 0 auto 2.5rem auto; font-size: 1.1rem; line-height: 1.6;">
+      At Kenya Dexters Nursing Agency, we bring together several areas of healthcare support so that individuals, families, and institutions can access appropriate professional services through one trusted organization across Nairobi, Kiambu, Machakos, and Kajiado.
+    </p>
+
+    <!-- 1. Home-Based Care (Featured Big Card) -->
+    <div class="service-detail-card">
+      <img src=images/homebasedthrapy2.jpg alt="African home nurse assisting an elderly patient in home environment" class="service-banner-img">
+      <div class="service-body">
+        <h2>Home-Based Care</h2>
+        <p class="sub-heading">Professional Care. In the Comfort of Home.</p>
+        <p>Home can be the best environment for recovery, ageing, and ongoing support when appropriate professional care is available. Our home-based care services are designed to support individuals while allowing them to remain in familiar surroundings.</p>
+        <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8;">
+          <li><strong>Home Nursing:</strong> Professional nursing support for clients who require healthcare assistance at home.</li>
+          <li><strong>Elderly Care:</strong> Dedicated assistance for older individuals with daily personal care, wellbeing, and companion support.</li>
+          <li><strong>Palliative Care:</strong> Compassionate support focused on comfort, dignity, and quality of life for clients living with serious or life-limiting conditions.</li>
+          <li><strong>Respite Care:</strong> Temporary relief support giving primary family caregivers opportunity to rest or attend to other obligations.</li>
+          <li><strong>Post-Hospitalisation Care:</strong> Structured transitional care assisting patients returning home after surgery or hospital discharge.</li>
+          <li><strong>Disability & Support Care:</strong> Daily assistance designed to promote autonomy for individuals with physical or cognitive disabilities.</li>
+          <li><strong>Nursing Assistance & Caregiver Support:</strong> Flexible personal care support tailored around individual client schedules.</li>
+        </ul>
+        <a href="families.html" class="btn btn-primary">REQUEST HOMECARE</a>
+      </div>
+    </div>
+
+    <!-- Grid Layout for Therapies -->
+    <div class="services-grid-2">
+      
+      <!-- 2. Physiotherapy -->
+      <div class="service-detail-card">
+        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80" alt="African physiotherapist working on patient leg mobility" class="service-banner-img">
+        <div class="service-body">
+          <h2>Physiotherapy</h2>
+          <p class="sub-heading">Movement. Strength. Recovery.</p>
+          <p>Physiotherapy supports people experiencing challenges with movement, mobility, joint function, and muscle strength. Services are available in home settings and facility environments.</p>
+          <div class="mt-3">
+            <a href="families.html" class="btn btn-primary">REQUEST PHYSIOTHERAPY</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Occupational Therapy -->
+      <div class="service-detail-card">
+        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80" alt="Occupational therapist assisting patient with hand exercise" class="service-banner-img">
+        <div class="service-body">
+          <h2>Occupational Therapy</h2>
+          <p class="sub-heading">Supporting Independence in Everyday Life.</p>
+          <p>Occupational therapy helps people overcome functional obstacles to participate in everyday activities and maintain independent daily living skills across all age groups.</p>
+          <div class="mt-3">
+            <a href="families.html" class="btn btn-primary">REQUEST OCCUPATIONAL THERAPY</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Speech Therapy -->
+      <div class="service-detail-card">
+        <img src=images/speechtherapy1.jpg alt="Speech therapist guiding child through communication practice" class="service-banner-img">
+        <div class="service-body">
+          <h2>Speech Therapy</h2>
+          <p class="sub-heading">Supporting Communication & Development.</p>
+          <p>Our speech therapy network provides assessment and intervention for children and adults requiring professional speech, articulation, language, or swallowing support.</p>
+          <div class="mt-3">
+            <a href="families.html" class="btn btn-primary">REQUEST SPEECH THERAPY</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Healthcare Staffing -->
+      <div class="service-detail-card">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" alt="African healthcare professionals in a hospital ward" class="service-banner-img">
+        <div class="service-body">
+          <h2>Healthcare Staffing</h2>
+          <p class="sub-heading">The Right Professionals for Your Institution.</p>
+          <p>We supply verified Nurses, Clinicians, Therapists, and Caregivers to hospitals, clinics, schools, corporate health desks, and residential care facilities.</p>
+          <div class="mt-3">
+            <a href="institutions.html" class="btn btn-secondary">REQUEST HEALTHCARE STAFF</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 6. Medical Consultancy -->
+    <div class="service-detail-card">
+      <img src=images/consultation.jpg alt="African male and female doctor in clinical consultation setting" class="service-banner-img">
+      <div class="service-body text-center">
+        <h2>Medical Consultancy</h2>
+        <p class="sub-heading">Access to Specialized Medical Expertise.</p>
+        <p style="max-width: 700px; margin: 0 auto 1.5rem auto;">Through our extensive network of healthcare associates, consultants, and physician partners, Kenya Dexters facilitates timely access to clinical guidance and specialist medical evaluations.</p>
+        <a href="contact.html" class="btn btn-primary">TALK TO US</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      
+      <!-- Column 1: Contact Details -->
+      <div class="footer-info">
+        <h3>Kenya Dexters Nursing Agency</h3>
+        <p><strong>Call / WhatsApp:</strong> 0786 242 477 | 0724 235 532</p>
+        <p><strong>Email:</strong> kenyadextershomecare@gmail.com</p>
+        <p><strong>Service Areas:</strong> Nairobi, Kiambu, Machakos, Kajiado</p>
+      </div>
+
+      <!-- Column 2: Quick Links (Group A) -->
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="families.html">For Families</a>
+          <a href="institutions.html">For Institutions</a>
+        </div>
+      </div>
+
+      <!-- Column 3: Quick Links (Group B) -->
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <div class="footer-links">
+          <a href="professionals.html">Our Professionals</a>
+          <a href="guide.html">Healthcare Guide</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <p>&copy; 2026 Kenya Dexters Nursing Agency. More Than Care. It's Dignity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Contact Bar -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:0786242477" class="btn btn-secondary">Call</a>
+    <a href="https://wa.me/254786242477" class="btn btn-primary" target="_blank">WhatsApp</a>
+    <a href="families.html" class="btn btn-primary">Request Care</a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
